@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "cross-env NODE_ENV=development nodemon app.js -e js,env"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
