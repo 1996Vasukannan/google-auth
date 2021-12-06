@@ -24,6 +24,9 @@ if (process.env.NODE_ENV === 'development') {
 app.engine('.hbs', engine({defaultLayout:'main',extname: '.hbs'}));
 app.set('view engine', '.hbs');
 
+// Memory unleaked
+app.set('trust proxy', 1);
+
 // Session
 app.use(session({secret:"MudunchaKandupidi",resave:false,saveUninitialized:true}))
 
